@@ -12,7 +12,6 @@ Input: s = ["h","e","l","l","o"]
 Output: ["o","l","l","e","h"]
 """
 
-# Your solution code goes below the comment
 class Solution(object):
     def reverseString(self, s):
         left = 0
