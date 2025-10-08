@@ -10,7 +10,6 @@ Input: nums = [-4,-1,0,3,10]
 Output: [0,1,9,16,100]
 """
 
-# Your solution code goes below the comment
 class Solution(object):
     def sortedSquares(self, nums):
         n = len(nums)
