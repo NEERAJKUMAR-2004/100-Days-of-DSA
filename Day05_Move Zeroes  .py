@@ -19,15 +19,15 @@ Output: [0]
 class Solution(object):
     def moveZeroes(self, nums):
         
-        slow = 0
-        
-        for fast in range(len(nums)):
-            
-            if nums[fast] != 0:
-                
-                nums[slow], nums[fast] = nums[fast], nums[slow]
-                
-                slow += 1
+        j = 0
+
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[j] = nums[i]
+                j += 1
+
+        for i in range(j, len(nums)):
+            nums[i] = 0
 
 """
 
